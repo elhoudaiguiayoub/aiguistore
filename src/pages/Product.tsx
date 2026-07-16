@@ -204,7 +204,7 @@ export default function Product() {
                       padding: "10px 12px",
                       borderRadius: 12,
                       border: "1px solid #222",
-                      background: active ? "#00ff66" : "transparent",
+                      background: active ? "#00a2ff" : "transparent",
                       color: active ? "#000" : "#000000",
                       fontWeight: 800,
                       cursor: "pointer",

@@ -60,7 +60,7 @@ export default function Favorites() {
                 width: "100%",
                 border: "1px solid #333",
                 background: "transparent",
-                color: "#fff",
+                color: "#080808",
                 padding: "10px 14px",
                 borderRadius: 12,
                 cursor: "pointer",
