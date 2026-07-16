@@ -139,20 +139,20 @@ export default function Product() {
           </div>
 
           <button
-            onClick={() => toggleFavorite(product.id)}
-            style={{
-              marginTop: 12,
-              border: "1px solid #333",
-              background: favorite ? "#ff3b6b" : "transparent",
-              color: "#fff",
-              padding: "10px 14px",
-              borderRadius: 12,
-              cursor: "pointer",
-              fontWeight: 800,
-            }}
-          >
-            {favorite ? "♥ Retirer des favoris" : "♡ Ajouter aux favoris"}
-          </button>
+             onClick={() => toggleFavorite(product.id)}
+             style={{
+               marginTop: 12,
+               border: "1px solid #d1d5db",
+               background: favorite ? "#ff3b6b" : "#ffffff",
+               color: favorite ? "#ffffff" : "#111827",
+               padding: "10px 14px",
+               borderRadius: 12,
+               cursor: "pointer",
+               fontWeight: 800,
+               }}
+           >
+  {favorite ? "♥ Retirer des favoris" : "♡ Ajouter aux favoris"}
+</button>
 
           <p className="muted" style={{ marginTop: 10, lineHeight: 1.6 }}>
             Produit disponible en plusieurs couleurs. Choisis la couleur, la taille,
@@ -205,7 +205,7 @@ export default function Product() {
                       borderRadius: 12,
                       border: "1px solid #222",
                       background: active ? "#00ff66" : "transparent",
-                      color: active ? "#000" : "#f5f5f5",
+                      color: active ? "#000" : "#000000",
                       fontWeight: 800,
                       cursor: "pointer",
                       minWidth: 54,
