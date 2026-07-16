@@ -7,7 +7,7 @@ const WHATSAPP_NUMBER = "+212661246805";
 export default function Checkout() {
   const { cart, total } = useCart();
 
-  const shipping = cart.length > 0 ? 9 : 0;
+  const shipping = cart.length > 0 ? 50 : 0;
   const grandTotal = total + shipping;
 
   const [form, setForm] = useState({
