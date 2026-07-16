@@ -11,7 +11,7 @@ export default function Home() {
       <section className="hero">
         <div className="hero-left">
           <span className="badge">NOUVEAUTÉS</span>
-          <h1 className="hero-title">AIGUI Store Streetwear</h1>
+          <h1 className="hero-title">AIGUI Store </h1>
           <p className="hero-sub">
             Découvre les pièces disponibles, choisis la couleur et la taille, puis commande directement sur WhatsApp.
           </p>
