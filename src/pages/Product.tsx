@@ -2,6 +2,7 @@
 import { Link, useParams } from "react-router-dom";
 import { products } from "../data/products";
 import { useCart } from "../context/CartContext";
+import { useFavorites } from "../context/FavoritesContext";
 
 const SIZES = ["S", "M", "L", "XL"] as const;
 type Size = (typeof SIZES)[number];
@@ -9,6 +10,7 @@ type Size = (typeof SIZES)[number];
 export default function Product() {
   const { id } = useParams<{ id: string }>();
   const { addToCart } = useCart();
+  const { isFavorite, toggleFavorite } = useFavorites();
 
   const product = useMemo(() => products.find((p) => p.id === id), [id]);
 
@@ -31,6 +33,7 @@ export default function Product() {
 
   const selectedColor = product.colors[colorIndex];
   const selectedImage = selectedColor.images[imageIndex];
+  const favorite = isFavorite(product.id);
 
   const handleColorChange = (index: number) => {
     setColorIndex(index);
@@ -131,10 +134,29 @@ export default function Product() {
             {product.name}
           </h1>
 
-          <div style={{ fontWeight: 900, fontSize: 18 }}>{product.price} DH</div>
+          <div style={{ fontWeight: 900, fontSize: 18 }}>
+            {product.price} DH
+          </div>
+
+          <button
+            onClick={() => toggleFavorite(product.id)}
+            style={{
+              marginTop: 12,
+              border: "1px solid #333",
+              background: favorite ? "#ff3b6b" : "transparent",
+              color: "#fff",
+              padding: "10px 14px",
+              borderRadius: 12,
+              cursor: "pointer",
+              fontWeight: 800,
+            }}
+          >
+            {favorite ? "♥ Retirer des favoris" : "♡ Ajouter aux favoris"}
+          </button>
 
           <p className="muted" style={{ marginTop: 10, lineHeight: 1.6 }}>
-            Produit disponible en plusieurs couleurs. Choisis la couleur, la taille, puis ajoute-le au panier.
+            Produit disponible en plusieurs couleurs. Choisis la couleur, la taille,
+            puis ajoute-le au panier.
           </p>
 
           <div style={{ marginTop: 14 }}>

@@ -8,7 +8,7 @@ import Cart from "./pages/Cart";
 import Checkout from "./pages/Checkout";
 import Confirmed from "./pages/Confirmed";
 import Footer from "./components/Footer";
-
+import Favorites from "./pages/Favorites";
 
 
 export default function App() {
@@ -23,7 +23,7 @@ export default function App() {
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/confirmed" element={<Confirmed />} />
         <Route path="/about" element={<About />} />
-
+        <Route path="/favorites" element={<Favorites />} />
 
       </Routes>
       <Footer />

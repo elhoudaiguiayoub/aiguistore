@@ -1,13 +1,16 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./index.css";
 import App from "./App";
 import { CartProvider } from "./context/CartContext";
-import "./index.css";
+import { FavoritesProvider } from "./context/FavoritesContext";
 
-ReactDOM.createRoot(document.getElementById("root")!).render(
-  <React.StrictMode>
+createRoot(document.getElementById("root")!).render(
+  <StrictMode>
     <CartProvider>
-      <App />
+      <FavoritesProvider>
+        <App />
+      </FavoritesProvider>
     </CartProvider>
-  </React.StrictMode>
+  </StrictMode>
 );

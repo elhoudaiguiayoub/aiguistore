@@ -20,6 +20,9 @@ export default function Header() {
           <NavLink to="/shop">
             Boutique
           </NavLink>
+          <NavLink to="/favorites">
+            Favoris
+          </NavLink>
           <NavLink to="/about">
             À propos
           </NavLink>
