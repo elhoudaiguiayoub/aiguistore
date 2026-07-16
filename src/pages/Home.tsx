@@ -43,12 +43,14 @@ export default function Home() {
 
         <div className="hero-right card" style={{ overflow: "hidden" }}>
           <div className="hero-img-wrap">
+            <Link to="/shop" className="card cat-card">
             <img
               src={featured[0]?.image}
               alt="Produit à la une"
               className="hero-img"
               loading="lazy"
             />
+            </Link>
           </div>
           <div style={{ marginTop: 12, display: "flex", justifyContent: "space-between", gap: 10 }}>
             <div>
