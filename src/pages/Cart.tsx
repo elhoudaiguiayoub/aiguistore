@@ -74,9 +74,9 @@ export default function Cart() {
                       width: 70,
                       padding: "10px 12px",
                       borderRadius: 12,
-                      border: "1px solid #222",
-                      background: "#0b0b0b",
-                      color: "#f5f5f5",
+                      border: "1px solid #000000",
+                      background: "#ffffff",
+                      color: "#090909",
                       outline: "none",
                     }}
                   />
@@ -86,7 +86,7 @@ export default function Cart() {
                     style={{
                       border: "1px solid #222",
                       background: "transparent",
-                      color: "#f5f5f5",
+                      color: "#020202",
                       padding: "10px 12px",
                       borderRadius: 12,
                       cursor: "pointer",
