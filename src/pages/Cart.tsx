@@ -1,7 +1,7 @@
 ﻿import { Link } from "react-router-dom";
 import { useCart } from "../context/CartContext";
 
-const SHIPPING_ESTIMATE = 9;
+const SHIPPING_ESTIMATE = 50;
 
 export default function Cart() {
   const { cart, removeFromCart, updateQty, total } = useCart();

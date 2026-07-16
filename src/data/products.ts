@@ -30,7 +30,7 @@ export const products: (Product & { image: string })[] = [
  {
     id: "t-shirt-casablanca",
     name: "t-shirt casablanca",
-    price: 45,
+    price: 250,
     category: "T-Shirts",
     image: teeroseFront,
     colors: [
@@ -54,7 +54,7 @@ export const products: (Product & { image: string })[] = [
   { 
     id: "short-casablanca",
     name: "short casablanca",
-    price: 45,
+    price: 250,
     category: "shorts",
     image: shortrosefront,
     colors: [
