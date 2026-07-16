@@ -177,7 +177,7 @@ export default function Product() {
                       width: 38,
                       height: 38,
                       borderRadius: "50%",
-                      border: active ? "3px solid #00ff66" : "1px solid #444",
+                      border: active ? "3px solid #0044ff" : "1px solid #444",
                       background: color.hex,
                       cursor: "pointer",
                     }}
