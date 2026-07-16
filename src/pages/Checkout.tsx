@@ -2,7 +2,7 @@
 import { Link } from "react-router-dom";
 import { useCart } from "../context/CartContext";
 
-const WHATSAPP_NUMBER = "212612345678";
+const WHATSAPP_NUMBER = "+212661246805";
 
 export default function Checkout() {
   const { cart, total } = useCart();
