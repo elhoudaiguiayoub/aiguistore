@@ -10,7 +10,7 @@ export default function Header() {
     <header className="nav">
       <div className="nav-inner">
         <Link to="/" className="logo" onClick={close}>
-          EHYoub
+          AIGUI Store
         </Link>
 
         <nav className="nav-links desktop">
