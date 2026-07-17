@@ -48,6 +48,9 @@ export default function Header() {
           <NavLink to="/shop" onClick={close}>
             Boutique
           </NavLink>
+          <NavLink to="/favorites" onClick={close}>
+            Favoris
+          </NavLink>
           <NavLink to="/about" onClick={close}>
             À propos
           </NavLink>
