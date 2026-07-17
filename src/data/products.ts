@@ -35,6 +35,11 @@ export const products: (Product & { image: string })[] = [
     image: teeroseFront,
     colors: [
       {
+        name: "Rose",
+        hex: "#ff69b4",
+        images: [teeroseFront, teeroseBack],
+      },
+      {
         name: "Blanc",
         hex: "#ffffff",
         images: [teeWhiteFront, teeWhiteBack],
@@ -43,11 +48,6 @@ export const products: (Product & { image: string })[] = [
         name: "Noir",
         hex: "#000000",
         images: [teeBlackFront, teeBlackBack],
-      },
-      {
-        name: "Rose",
-        hex: "#ff69b4",
-        images: [teeroseFront, teeroseBack],
       }
     ],
   },
@@ -58,20 +58,20 @@ export const products: (Product & { image: string })[] = [
     category: "shorts",
     image: shortrosefront,
     colors: [
-      {
-        name: "Bleu-ciel",
-        hex: "#178aae",
-        images: [shortbleufront, shortbleuback],
+      { 
+        name: "Rose",
+        hex: "#ff69b4",
+        images: [shortrosefront, shortroseback,shortrosemode1, shortrosemode2, shortrosemode3]
       },
       {
         name: "Noir",
         hex: "#000000",
         images: [shortblackfront, shortblackback],
       },
-      {
-        name: "Rose",
-        hex: "#ff69b4",
-        images: [shortrosefront, shortroseback,shortrosemode1, shortrosemode2, shortrosemode3],
+      { 
+        name: "Bleu-ciel",
+        hex: "#178aae",
+        images: [shortbleufront, shortbleuback],
       },
       {
         name: "green",
