@@ -1,13 +1,11 @@
-﻿import { Link } from "react-router-dom";
+import { orderTotal } from "../data/order";
+import { Link } from "react-router-dom";
 import { useCart } from "../context/CartContext";
-
-const SHIPPING_ESTIMATE = 50;
 
 export default function Cart() {
   const { cart, removeFromCart, updateQty, total } = useCart();
 
-  const shipping = cart.length > 0 ? SHIPPING_ESTIMATE : 0;
-  const grandTotal = total + shipping;
+  const { shipping, total: grandTotal } = orderTotal(cart);
 
   if (cart.length === 0) {
     return (
@@ -117,7 +115,7 @@ export default function Cart() {
             <hr style={{ borderColor: "#222", margin: "10px 0" }} />
 
             <div style={{ display: "flex", justifyContent: "space-between", fontWeight: 900 }}>
-              <span>Total</span>
+              <span>Total estimé</span>
               <span>{grandTotal} DH</span>
             </div>
           </div>
