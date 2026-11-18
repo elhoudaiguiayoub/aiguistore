@@ -1,5 +1,5 @@
-document.title = "À propos — AIGUISTORE";
 import { Link } from "react-router-dom";
+import { merchantContact } from "../data/store";
 
 export default function About() {
   return (
@@ -38,10 +38,10 @@ export default function About() {
         <h2>Pourquoi commander chez nous ?</h2>
 
         <ul className="muted" style={{ lineHeight: 1.9 }}>
-          <li>Photos réelles des produits</li>
+          <li>Photos des produits</li>
           <li>Plusieurs couleurs et tailles disponibles</li>
           <li>Commande simple par WhatsApp</li>
-          <li>Réponse rapide pour confirmer la commande</li>
+          <li>Confirmation du stock et du montant sur WhatsApp</li>
           <li>Livraison locale selon disponibilité</li>
         </ul>
       </section>
@@ -55,14 +55,7 @@ export default function About() {
         </p>
 
         <div style={{ marginTop: 16, display: "flex", gap: 12, flexWrap: "wrap" }}>
-          <a
-            href="https://wa.me/+212661246805"
-            target="_blank"
-            rel="noreferrer"
-            className="btn btn-ghost"
-          >
-            WhatsApp
-          </a>
+          {merchantContact && <a href={merchantContact} target="_blank" rel="noopener noreferrer" className="btn btn-ghost">WhatsApp</a>}
 
           <a
             href="https://www.instagram.com/aiguistore?utm_source=qr"

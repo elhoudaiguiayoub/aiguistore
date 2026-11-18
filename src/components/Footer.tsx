@@ -1,4 +1,6 @@
-﻿export default function Footer() {
+import { merchantContact } from "../data/store";
+
+export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
@@ -9,12 +11,7 @@
         </div>
 
         <div className="footer-links">
-          <a href="https://wa.me/212612345678" target="_blank" rel="noreferrer">
-            WhatsApp
-          </a>
-          <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
-            Instagram
-          </a>
+          {merchantContact && <a href={merchantContact} target="_blank" rel="noopener noreferrer">WhatsApp</a>}
         </div>
       </div>
     </footer>

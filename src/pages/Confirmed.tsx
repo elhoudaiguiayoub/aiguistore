@@ -3,15 +3,15 @@ import { Link } from "react-router-dom";
 export default function Confirmed() {
   return (
     <div className="container">
-      <span className="badge">Order</span>
-      <h1 style={{ marginTop: 10 }}>Confirmed ✅</h1>
+      <span className="badge">Commande</span>
+      <h1 style={{ marginTop: 10 }}>Vérifie ta demande sur WhatsApp</h1>
       <p className="muted">
-        Demo project — your order is confirmed. Thanks for shopping EHYoub.
+        La boutique confirme ta demande directement sur WhatsApp après réception.
       </p>
 
       <div style={{ marginTop: 16 }}>
         <Link to="/shop" className="btn" style={{ display: "inline-block" }}>
-          Back to shop
+          Retour à la boutique
         </Link>
       </div>
     </div>

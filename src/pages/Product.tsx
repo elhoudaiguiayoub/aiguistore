@@ -1,10 +1,10 @@
+import { PRODUCT_SIZES as SIZES } from "../data/store";
 ﻿import { useMemo, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { products } from "../data/products";
 import { useCart } from "../context/CartContext";
 import { useFavorites } from "../context/FavoritesContext";
 
-const SIZES = ["S", "M", "L", "XL"] as const;
 type Size = (typeof SIZES)[number];
 
 export default function Product() {
